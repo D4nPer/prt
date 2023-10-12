@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+	 let ped =['Фамилия:Карамзин','Имя:Виктор','Отчество:Геннадьевна','Должность:Преподователь специальных дисциплин','Уровень образования:Высшее','Категория:Первая','Образование:Московский государственный институт электронной техники','Преподоваемая дисциплина:Информатика']
+        console.log(ped[0]);
+        console.log(ped[1]);
+		console.log(ped[2]);
+		console.log(ped[3]);
+		console.log(ped[4]);
+		console.log(ped[5]);
+		console.log(ped[6]);
+		console.log(ped[7]);
+			</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Введение в JavaScript</h1>
+	</header>	
+	
+	<div class="content">
+		<script>
+		let discipline=[ 'Информатика', 'Основы прогромирования', 'Инжинерная графика'];
+		let prof = {
+			surname:'Карамзин',
+			name:'Виктор',
+			patronymic:'Геннадьевич',
+			ocupation:'Преподователь спец.дисциплин',
+			degree:'Высшее',
+			category:'Первая',
+			education:'Московская государственный институт электронной техники',
+			discipline,
+			none:' ',
+		};
+		let profes = `
+			<b> ${prof.surname} ${prof.name} ${prof.patronymic} </b><br>
+			Должность:${prof.ocupation}<br>
+			Уровень образования:${prof.degree}<br>
+			Категория: ${prof.category}<br>
+			Образование:${prof.education}<br>
+			Дисциплина:${prof.discipline[0]}<br>${prof.discipline[1]}<br>${prof.discipline[2]}<br>
+			Примечание 
+		`;
+        document.write(profes);
+		</script>
+	</div>
+	
+	<footer align = "center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+</html>
